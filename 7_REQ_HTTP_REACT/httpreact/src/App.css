@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.add-product{
+    border-top: 1px solid #000;
+}
+/*https://www.udemy.com/course/react-do-zero-a-maestria-c-hooks-router-api-projetos/learn/lecture/31444830?start=0#questions*/
