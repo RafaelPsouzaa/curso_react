@@ -23,6 +23,24 @@ function App() {
 
   //2-add de produtos 
   const handleSubmit = async (e) => {
+    e.preventDefault();
+    const product = {
+      name,
+      price,
+    };
+   const res = await fetch(url,{
+    method:'POST',
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body: JSON.stringify(product),
+
+   });
+   //3 - carregamento dinâmico
+   const addedProduct = await res.json()
+   setProducts((prevProducts) => [...prevProducts,addedProduct]);
+   setName("");
+   setPrice("");
 
   }
 
@@ -31,7 +49,7 @@ function App() {
       <h1>Listas de Produtos</h1>
       <ul>
         {products.map((product) => (
-          <li key={product.id}>{product.name}-{product.price}</li>
+          <li key={product.id}>{product.name}- R${product.price}</li>
         ))}
       </ul>
       <div className="add-product">
