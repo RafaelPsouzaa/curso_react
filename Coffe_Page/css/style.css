@@ -82,5 +82,44 @@ section{
     font-size: 1.7rem;
     cursor: pointer;
     margin-top: 1rem;
+    display: inline-block;
+
+    
+}
+
+.home-container{
+    background: url("../img/home-img.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+.home-container section{
+    display: flex;
+    align-items: center;
+     min-height: 100vh;
+}
+
+.content{
+    max-width: 60rem;
+
+}
+
+.content h3{
+    color: #fff;
+    font-size: 6rem;
+
+}
+.content p{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+
+
+}
+
+.sobre section{
+    color: #fff;
     
 }
