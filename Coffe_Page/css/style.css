@@ -53,6 +53,7 @@ section{
     left: 0;
     z-index: 99;
     border-bottom: var(--border);
+    background-color: var(--bg);
 
 }
 .header section{
@@ -85,6 +86,10 @@ section{
     display: inline-block;
 
     
+}
+.btn:hover{
+  background-color: var(--main-color);  
+  letter-spacing: 0.2rem;
 }
 
 .home-container{
@@ -119,7 +124,85 @@ section{
 
 }
 
-.sobre section{
+.title{
+    font-size: 4rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+
+}
+
+.title span{
     color: #fff;
-    
+    text-transform: uppercase;
+
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 1.5rem;
+
+}
+
+.about .row .content{
+    padding: 2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;
+
+}
+.menu .box-menu{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+   
+}
+
+.menu .box-menu .box{
+    text-align: center;
+    border: var(--border);
+    padding: 5px;   
+    cursor: pointer;
+}
+.menu .box-menu .box:hover{
+    background-color: #fff;
+}
+
+
+.menu .box-menu .box img{
+    height: 10rm;
+
+}
+.menu .box-menu .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+
+}
+.menu .box-menu .box .price{
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5 0;
+
+
+}
+.menu .box-menu .box span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+.menu .box-menu .box:hover>*{
+    color: var(--black);
 }
