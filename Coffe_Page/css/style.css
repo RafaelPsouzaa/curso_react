@@ -221,3 +221,28 @@ section{
 .review .box-menu .box:hover>*{
     color: var(--black);
 }
+
+@media (max-width:1069px){
+    main::after{
+        background: linear-gradient(0deg,#000 20%,rgba(0,0,0,0)65%)no-repeat;
+        width: 100vw;
+
+    }
+    .sobre .row {
+  display: flex;
+  flex-direction: column; /* coloca os filhos em coluna */
+  align-items: center;    /* centraliza horizontalmente (opcional) */
+  gap: 20px;              /* espaçamento entre imagem e texto */
+}
+
+.sobre .container-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.sobre .content {
+  text-align: center;  /* opcional: centralizar o texto */
+  max-width: 700px;    /* largura máxima para não ficar muito esticado */
+}
+}
