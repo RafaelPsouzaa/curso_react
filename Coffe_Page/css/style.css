@@ -276,6 +276,9 @@ section{
   -ms-user-select: none;
   user-select: none;
 }
+.navBar a:hover{
+    color: #fff;
+}
 
 /* botao inicial do menu os tres pontinhos antes da trasiçao */
 .navicon {
