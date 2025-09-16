@@ -249,7 +249,7 @@ section{
   display: flex;
   flex-direction:stretch; /* coloca os filhos em coluna */
   align-items:initial;    /* centraliza horizontalmente (opcional) */
-  background: white;
+  background: var(--main-color);
   color: rgba(0, 0, 0, 0.87);
   -webkit-clip-path: circle(24px at 30px 24px);
   clip-path: circle(24px at 32px 24px);
@@ -277,7 +277,7 @@ section{
   user-select: none;
 }
 
-
+/* botao inicial do menu os tres pontinhos antes da trasiçao */
 .navicon {
   padding: 23px 20px;
   cursor: pointer;
